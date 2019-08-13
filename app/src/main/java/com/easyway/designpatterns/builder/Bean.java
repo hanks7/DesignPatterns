@@ -1,6 +1,6 @@
 package com.easyway.designpatterns.builder;
 
-public class PushConfig {
+public class Bean {
     /**
      * 是否是debug模式
      */
@@ -13,16 +13,11 @@ public class PushConfig {
      * 是否注册推送
      */
     public final boolean initPush;
-    /**
-     * 记录信息
-     */
-    public final Info info;
 
-    PushConfig(Builder builder) {
+    Bean(Builder builder) {
         this.debugModel = builder.debugModel;
         this.initPresence = builder.initPresence;
         this.initPush = builder.initPush;
-        this.info = builder.info;
     }
 
 

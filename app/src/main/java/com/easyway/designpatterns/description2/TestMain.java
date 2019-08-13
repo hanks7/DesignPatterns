@@ -8,7 +8,7 @@ public class TestMain {
      */
     public static void main(String[] args) {
 
-        Pancake tornCake = new TornCake();
+        Pancake tornCake = new Roujiamo();
         //手抓饼基础价
         System.out.println(String.format("%s ￥%s", tornCake.getDesc(), tornCake.price()));
 

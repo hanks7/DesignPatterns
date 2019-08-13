@@ -4,18 +4,8 @@ public class Builder {
     boolean debugModel = false;
     boolean initPresence = true;
     boolean initPush = true;
-    Info info;
 
-    /**
-     * 设置信息
-     *
-     * @param info
-     * @return
-     */
-    public Builder setInfo(Info info) {
-        this.info = info;
-        return this;
-    }
+
 
     /**
      * 设置是否打印log
@@ -55,14 +45,9 @@ public class Builder {
      *
      * @return
      */
-    public PushConfig build() {
-        setEmptyValue();
-        return new PushConfig(this);
+    public Bean build() {
+        return new Bean(this);
     }
 
-    private void setEmptyValue() {
-        if (this.info == null) {
-            info = new Info("", "");
-        }
-    }
+
 }

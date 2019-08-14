@@ -1,5 +1,8 @@
 package com.easyway.designpatterns.factory;
 
+/**
+ * https://segmentfault.com/a/1190000015050674
+ */
 public class TestMain {
 
 

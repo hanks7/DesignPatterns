@@ -1,5 +1,8 @@
 package com.easyway.designpatterns.factory;
 
+/**
+ * https://segmentfault.com/a/1190000015050674
+ */
 public class TestMain2 {
 
 
@@ -43,7 +46,8 @@ public class TestMain2 {
     }
 
     /**
-     * 工厂模式
+     * 工厂方法模式实例
+     *
      * @param args
      */
     public static void main(String[] args) {

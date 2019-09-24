@@ -13,7 +13,7 @@ public class TestMain {
      */
     public static void main(String[] args) {
         //被观察者
-        Person person = new Person();
+        PersonObserverable observerable = new PersonObserverable();
         //观察者
         Observer observer = new Observer() {
             @Override
@@ -22,11 +22,11 @@ public class TestMain {
             }
         };
         //注册观测者
-        person.addObserver(observer);
+        observerable.addObserver(observer);
         //触发观察事件
-        person.setName("我的名字");
+        observerable.setName("我的名字");
         //注销观测者
-        person.deleteObserver(observer);
+        observerable.deleteObserver(observer);
     }
 
 }

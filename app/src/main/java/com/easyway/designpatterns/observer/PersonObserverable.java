@@ -6,7 +6,7 @@ import java.util.Observable;
  * 被观察者
  * Created by User on 2017/11/22.
  */
-public class Person extends Observable {
+public class PersonObserverable extends Observable {
 
     String name;
 
